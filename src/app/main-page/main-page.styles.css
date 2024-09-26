@@ -1,0 +1,130 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #68b2f8;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.header h1 {
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.header img {
+    margin-top: 20px;
+}
+
+.nav-link {
+    color: #000 !important;
+}
+
+.news-item {
+    background-color: #333;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.news-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.news-item h5 {
+    margin-top: 15px;
+}
+
+.news-item .meta {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.footer {
+    background-color: #7037cd;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    padding: 0 20px;
+}
+
+.footer .social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.golpe-container {
+    font-size: 150px; /* Aumenta o tamanho da fonte */
+    text-align: center;
+  }
+  
+  .letter {
+    display: inline-block; /* Permite que cada letra seja animada individualmente */
+    animation: colorChange 10s infinite alternate; /* Animação de mudança de cor */
+    -webkit-text-stroke: 2px black; /* Adiciona borda preta ao texto */
+    text-stroke: 2px black; /* Para navegadores que suportam text-stroke */
+    font-weight: bold; /* Define a fonte como bold */
+    font-family: "Luckiest Guy", cursive; /* Define a nova fonte */
+  }
+  
+  /* Define a animação para cada letra com mais etapas de cores */
+  @keyframes colorChange {
+    0% { color: #FFD700; }   /* Amarelo dourado */
+    10% { color: #FFEA00; }  /* Amarelo claro */
+    20% { color: #FFCC00; }  /* Amarelo forte */
+    30% { color: #FFA500; }  /* Laranja */
+    40% { color: #FF8C00; }  /* Laranja escuro */
+    50% { color: #FF6347; }  /* Tomate */
+    60% { color: #FF4500; }  /* Laranja avermelhado */
+    70% { color: #FF0000; }  /* Vermelho */
+    80% { color: #DC143C; }  /* Vermelho profundo */
+    90% { color: #B22222; }  /* Vermelho escuro */
+    100% { color: #8B0000; } /* Vermelho muito escuro */
+  }
+
+/* Delay a animação para cada letra */
+.letter:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.letter:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.letter:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.letter:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.letter:nth-child(5) {
+    animation-delay: 2s;
+}
+
+.letter:nth-child(6) {
+    animation-delay: 2.5s;
+}
+
+.subtitle {
+    font-family: "Luckiest Guy", cursive; /* Define a nova fonte */
+    color: white;
+    font-size: 24px;
+    -webkit-text-stroke: 1px #000;
+}
+
+.descriptionHeader{
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    -webkit-text-stroke: 1px #000;
+    font-size: 20px;
+}

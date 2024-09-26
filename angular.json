@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "platCON": {
+    "platcon-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/plat-con",
+            "outputPath": "dist/platcon-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "platCON:build:production"
+              "buildTarget": "platcon-app:build:production"
             },
             "development": {
-              "buildTarget": "platCON:build:development"
+              "buildTarget": "platcon-app:build:development"
             }
           },
           "defaultConfiguration": "development"
