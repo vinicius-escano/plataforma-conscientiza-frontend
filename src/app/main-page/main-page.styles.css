@@ -5,7 +5,7 @@ body {
 }
 
 .header {
-    background-color: #68b2f8;
+    background-color: #3C91E6;
     text-align: center;
     padding: 50px 0;
 }
@@ -24,7 +24,7 @@ body {
 }
 
 .news-item {
-    background-color: #333;
+    background-color: #342E37;
     margin-bottom: 30px;
     padding: 20px;
     border-radius: 5px;
@@ -45,7 +45,7 @@ body {
 }
 
 .footer {
-    background-color: #7037cd;
+    background-color: #A2D729;
     padding: 50px 0;
     text-align: center;
 }
@@ -123,7 +123,7 @@ body {
 }
 
 .descriptionHeader{
-    font-family: 'Permanent Marker', cursive;
+    font-family: "Luckiest Guy", cursive; /* Define a nova fonte */
     color: white;
     -webkit-text-stroke: 1px #000;
     font-size: 20px;
