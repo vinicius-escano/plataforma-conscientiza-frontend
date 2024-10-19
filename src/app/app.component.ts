@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { RegistryComponent } from './registry/registry.component';
+import { RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angular/router';
 import { MainPageComponent } from './main-page/main-page.component';
+import { ResearchoneComponent } from './researchone/researchone.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RegistryComponent, MainPageComponent],
+  imports: [RouterOutlet, RouterModule, RouterLink, RouterLinkActive, MainPageComponent, ResearchoneComponent],
   templateUrl: './app.component.html',
-  styles: ['./app.component.css','./registry.component.ts']
+  styles: ['./app.component.css']
 })
 export class AppComponent {
   title = 'platcon-app';

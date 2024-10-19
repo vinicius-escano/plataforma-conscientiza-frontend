@@ -211,3 +211,47 @@ body {
     -webkit-text-stroke: 1px #000;
     font-size: 20px;
 }
+
+.titles {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 25px;  /* Tamanho grande e impactante */
+    color: white;  /* Cor escura para contraste */
+    margin-top: 30px;  /* Espaçamento acima do título */
+    margin-bottom: 10px;  /* Espaçamento abaixo do título */
+    text-transform: uppercase;  /* Deixa os títulos em maiúsculas */
+    letter-spacing: 1px;  /* Espaçamento entre letras */
+    border-bottom: 2px solid #3498db;  /* Linha azul embaixo do título */
+    padding-bottom: 5px;  /* Espaçamento entre o texto e a linha */
+    position: relative;
+  }
+  
+  /* Adicionando um sombreamento sutil ao lado dos títulos */
+  titles::before {
+    content: '';  /* Cria um elemento antes do texto */
+    position: absolute;
+    width: 6px;  /* Largura da sombra lateral */
+    height: 100%;  /* Altura completa do título */
+    background-color: #3498db;  /* Cor da sombra lateral */
+    top: 0;
+    left: -10px;  /* Posicionamento da sombra para a esquerda */
+  }
+  
+  /* Estilizando os subtítulos ou outras partes da lista */
+  .subtitle {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 23px;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+  
+  /* Para o texto normal que acompanha os títulos */
+  .paragraph {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: white;
+    line-height: 1.6;  /* Melhor legibilidade com espaçamento entre linhas */
+    margin-bottom: 20px;  /* Espaço entre os parágrafos */
+  }
