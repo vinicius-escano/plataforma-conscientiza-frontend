@@ -256,15 +256,9 @@ body {
     margin-bottom: 20px;  /* Espaço entre os parágrafos */
   }
 
-  /* components/registro-form/registro-form.component.css */
-form {
+  .chart-container {
     display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: auto;
-  }
-  
-  div {
-    margin-bottom: 1rem;
-  }
-  
+    justify-content: space-around; /* Alinha os gráficos com espaço entre eles */
+    align-items: center; /* Centraliza verticalmente */
+    flex-wrap: wrap; /* Permite que os gráficos se movam para a próxima linha em telas menores */
+}

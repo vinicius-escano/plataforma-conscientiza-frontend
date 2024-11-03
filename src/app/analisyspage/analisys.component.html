@@ -1,0 +1,68 @@
+<body>
+    <div class="header">
+        <div class="descriptionHeader">
+            <p style="font-size: xx-large;">Que perigos podemos encontrar?</p>
+            <p style="font-size: medium;">Você sabe quais são as abordagens que golpistas podem usar pra tentar te
+                passar pra trás?</p>
+        </div>
+    </div>
+    <div class="container mt-5" style="padding-bottom: 20px;">
+        <div class="row">
+            <app-registry-form></app-registry-form>
+            <div>
+                <h1 class="titles">Acessos</h1>
+                <p>Para ter uma noção do impacto dos golpes na sociedade, aqui mostramos algumas informações sobre.</p>
+            </div>                
+            <div class="chart-container">
+                <p-chart type="pie" width="500px" height="500px" [data]="dataAccess" [options]="options"></p-chart>
+                <p-chart type="pie" width="500px" height="500px" [data]="dataAge" [options]="options"></p-chart>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="descriptionHeader">
+                        Sobre
+                    </h5>
+                    <p>
+                        Essa é uma plataforma de conscientização, pensada a partir de um projeto de conclusão de curso
+                        de ciências da computação, com o
+                        intuito de ajudar a população brasileira a se conscientizar sobre os perigos dos golpes na
+                        internet.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="descriptionHeader">
+                        Contato
+                    </h5>
+                    <p>
+                        Para contato envie um email para platcon&#64;gmail.com
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="descriptionHeader">
+                        informações
+                    </h5>
+                    <p>
+                        Criado em 09/2023.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <p class="descriptionHeader">
+                        PlatCON 2024
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script crossorigin="anonymous" integrity="sha384-oBqDVmMz4fnFO9gybBogGzOgQpeKBmBin5e1m6p6C6owAP+0US8e/0MOzG7EDJH4"
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
+        </script>
+    <script crossorigin="anonymous" integrity="sha384-pZfHC6D4h2s5Qd3yY4p6FZ+f5ZL5p6p6C6owAP+0US8e/0MOzG7EDJH4"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js">
+        </script>
+</body>

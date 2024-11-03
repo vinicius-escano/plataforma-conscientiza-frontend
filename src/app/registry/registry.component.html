@@ -1,0 +1,34 @@
+<!-- components/registro-form/registro-form.component.html -->
+<form [formGroup]="registryForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="navegador">Navegador:</label>
+      <input id="navegador" formControlName="navegador" required />
+    </div>
+  
+    <div>
+      <label for="horarioAcesso">Horário de Acesso:</label>
+      <input type="datetime-local" id="horarioAcesso" formControlName="horarioAcesso" />
+    </div>
+  
+    <div>
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade" formControlName="idade" required />
+    </div>
+  
+    <div>
+      <label for="tipoAparelho">Tipo de Aparelho:</label>
+      <select id="tipoAparelho" formControlName="tipoAparelho" required>
+        <option *ngFor="let tipo of tiposAparelho | keyvalue" [value]="tipo.value">{{ tipo.key }}</option>
+      </select>
+    </div>
+  
+    <div>
+      <label for="origemAcesso">Origem de Acesso:</label>
+      <select id="origemAcesso" formControlName="origemAcesso" required>
+        <option *ngFor="let origem of origensAcesso | keyvalue" [value]="origem.value">{{ origem.key }}</option>
+      </select>
+    </div>
+  
+    <button type="submit" [disabled]="registryForm.invalid">Registrar</button>
+  </form>
+  
